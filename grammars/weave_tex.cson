@@ -1,0 +1,15 @@
+'name': 'Weave.jl: LaTex'
+scopeName: 'source.weave.latex'
+'fileTypes': [
+  'texw'
+  'jtexw'
+  'jnw'
+]
+patterns: [
+    {
+      'include' : 'source.weave.noweb'
+    }
+    {
+      'include': 'text.tex.latex'
+    }
+]

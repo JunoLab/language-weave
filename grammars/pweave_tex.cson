@@ -1,0 +1,14 @@
+'name': 'Pweave: LaTex'
+scopeName: 'source.pweave.latex'
+'fileTypes': [
+  'ptexw'
+  'pnw'
+]
+patterns: [
+    {
+      'include' : 'source.pweave.noweb'
+    }
+    {
+      'include': 'text.tex.latex'
+    }
+]
