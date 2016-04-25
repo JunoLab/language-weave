@@ -4,9 +4,9 @@
   "description": "atom.io support for Weave.jl and Pweave",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mpastell/language-weave.git"
+    "url": "git+https://github.com/mpastell/language-weave.git",
+    "license": "MIT",
   },
-  "license": "MIT",
   "engines": {
     "atom": "*"
   },
