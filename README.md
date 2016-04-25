@@ -10,3 +10,7 @@ Provides the following modes:
   - `Weave.jl: LaTex` for  texw, .jtexw and .jnw.
   - `Pweave: markdown` for .pmd and .pmdw (markdown with noweb)
   - `Pweave: LaTex` for .ptexw and .pnw
+
+If you need support for other formats open as issue or make a pull request.
+
+![](http://mpastell.com/images/language-weave.png)

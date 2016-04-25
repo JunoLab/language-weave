@@ -1,7 +1,7 @@
 {
   "name": "language-weave",
   "version": "0.2.0",
-  "description": "atom.io support for Weave.jl and Pweave",
+  "description": "Support for Weave.jl and Pweave",
   "license": "MIT",
   "repository": {
     "type": "git",
