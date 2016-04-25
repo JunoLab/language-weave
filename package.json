@@ -1,6 +1,6 @@
 {
   "name": "language-weave",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "atom.io support for Weave.jl and Pweave",
   "repository": {
     "type": "git",
@@ -16,10 +16,10 @@
     "url": "https://github.com/mpastell/language-weave/issues"
   },
   "homepage": "https://github.com/mpastell/language-weave",
-    "extensions": {
-      ".json": [
-        "package.json"
-      ]
-    },
-    "folders": []
+  "extensions": {
+    ".json": [
+      "package.json"
+    ]
+  },
+  "folders": []
 }
