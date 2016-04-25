@@ -1,0 +1,47 @@
+'name': 'Weave.jl: markdown'
+scopeName: 'source.weave.md'
+'fileTypes': [
+  'jmd'
+  'jmdw'
+  'mdw'
+]
+patterns: [
+    {
+    'begin': '^<<.*>>=\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.gfm'
+    'end': '^@\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.gfm'
+    'name': 'markup.code.julia.gfm'
+    'contentName': 'source.julia'
+    'patterns': [
+      {
+        'include': 'source.julia'
+      }
+    ]
+    }
+    {
+    'begin': '(?:^(?:`|~){3,}\\s*(?:\\{|\{\\.|)julia(?:;|\\s|)(.*)\\}\s*$)|(?:^(?:`|~){3,}\\s*julia\\s*$)'
+    'beginCaptures':
+      '0':
+        'name': 'support.weave'
+    'end': '^(`|~){3,}\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.weave'
+    'name': 'markup.code.julia.weave'
+    'contentName': 'source.julia'
+    'patterns': [
+      {
+        'include': 'source.julia'
+      }
+    ]
+    }
+    {
+      'include': 'source.gfm'
+    }
+
+  ]

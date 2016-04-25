@@ -1,0 +1,28 @@
+{
+  "name": "language-weave",
+  "version": "0.0.0",
+  "description": "atom.io support for Weave.jl and Pweave",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpastell/language-weave.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">1.0.0"
+  },
+  "dependencies": {},
+  "readme": "Atom syntax highlighting for [Weave.jl](http://weavejl.mpastell.com) and [Pweave](http://mpastell.com/pweave) documents. Currently supports markdown input formats.",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/mpastell/language-weave/issues"
+  },
+  "homepage": "https://github.com/mpastell/language-weave",
+    "version": 0,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }

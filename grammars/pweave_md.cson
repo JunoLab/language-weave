@@ -1,0 +1,46 @@
+'name': 'Pweave: markdown'
+scopeName: 'source.pweave.md'
+'fileTypes': [
+  'pmd'
+  'pmdw'
+]
+patterns: [
+    {
+    'begin': '^<<.*>>=\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'support.gfm'
+    'end': '^@\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.gfm'
+    'name': 'markup.code.python.gfm'
+    'contentName': 'source.python'
+    'patterns': [
+      {
+        'include': 'source.python'
+      }
+    ]
+    }
+    {
+    'begin': '(?:^(?:`|~){3,}\\s*(?:\\{|\{\\.|)python(?:,|\\s|)(.*)\\}\s*$)|(?:^(?:`|~){3,}\\s*python\\s*$)'
+    'beginCaptures':
+      '0':
+        'name': 'support.weave'
+    'end': '^(`|~){3,}\\s*$'
+    'endCaptures':
+      '0':
+        'name': 'support.weave'
+    'name': 'markup.code.python.weave'
+    'contentName': 'source.python'
+    'patterns': [
+      {
+        'include': 'source.python'
+      }
+    ]
+    }
+    {
+      'include': 'source.gfm'
+    }
+
+  ]
