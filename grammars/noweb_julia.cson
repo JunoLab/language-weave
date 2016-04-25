@@ -1,0 +1,21 @@
+#Noweb for Julia
+scopeName: 'source.weave.noweb'
+patterns: [
+    {
+      'begin': '^<<.*>>=\\s*$'
+      'beginCaptures':
+        '0':
+          'name': 'support.gfm'
+      'end': '^@\\s*$'
+      'endCaptures':
+        '0':
+          'name': 'support.gfm'
+      'name': 'markup.code.julia.gfm'
+      'contentName': 'source.julia'
+      'patterns': [
+        {
+          'include': 'source.julia'
+        }
+      ]
+    }
+  ]

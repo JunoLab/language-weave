@@ -7,21 +7,7 @@ scopeName: 'source.weave.md'
 ]
 patterns: [
     {
-    'begin': '^<<.*>>=\\s*$'
-    'beginCaptures':
-      '0':
-        'name': 'support.gfm'
-    'end': '^@\\s*$'
-    'endCaptures':
-      '0':
-        'name': 'support.gfm'
-    'name': 'markup.code.julia.gfm'
-    'contentName': 'source.julia'
-    'patterns': [
-      {
-        'include': 'source.julia'
-      }
-    ]
+      'include' : 'source.weave.noweb'
     }
     {
     'begin': '(?:^(?:`|~){3,}\\s*(?:\\{|\{\\.|)julia(?:;|\\s|)(.*)\\}\s*$)|(?:^(?:`|~){3,}\\s*julia\\s*$)'
@@ -43,5 +29,4 @@ patterns: [
     {
       'include': 'source.gfm'
     }
-
-  ]
+]

@@ -2,10 +2,10 @@
   "name": "language-weave",
   "version": "0.1.0",
   "description": "atom.io support for Weave.jl and Pweave",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mpastell/language-weave.git",
-    "license": "MIT",
+    "url": "git+https://github.com/mpastell/language-weave.git"
   },
   "engines": {
     "atom": "*"

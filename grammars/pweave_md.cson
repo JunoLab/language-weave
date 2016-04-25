@@ -6,21 +6,7 @@ scopeName: 'source.pweave.md'
 ]
 patterns: [
     {
-    'begin': '^<<.*>>=\\s*$'
-    'beginCaptures':
-      '0':
-        'name': 'support.gfm'
-    'end': '^@\\s*$'
-    'endCaptures':
-      '0':
-        'name': 'support.gfm'
-    'name': 'markup.code.python.gfm'
-    'contentName': 'source.python'
-    'patterns': [
-      {
-        'include': 'source.python'
-      }
-    ]
+      'include' : 'source.pweave.noweb'
     }
     {
     'begin': '(?:^(?:`|~){3,}\\s*(?:\\{|\{\\.|)python(?:,|\\s|)(.*)\\}\s*$)|(?:^(?:`|~){3,}\\s*python\\s*$)'
