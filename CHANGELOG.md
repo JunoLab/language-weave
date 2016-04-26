@@ -1,4 +1,7 @@
 
+# 0.2.3
+  - Add syntax highlighting for markdown delimiters and chunk options
+
 # 0.2.2
   - Add syntax highlighting for noweb delimiters and chunk options
 
