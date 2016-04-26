@@ -10,15 +10,25 @@ patterns: [
       'include' : 'source.weave.noweb'
     }
     {
-    'begin': '(?:^(?:`|~){3,}\\s*(?:\\{|\{\\.|)julia(?:;|\\s|)(.*)\\}\s*$)|(?:^(?:`|~){3,}\\s*julia\\s*$)'
+    'begin': '^([`~]{3,})(\\{|\\{\\.|)(julia)(;|)(.*?)(\\}|)\\s*$'
     'beginCaptures':
-      '0':
-        'name': 'support.weave'
-    'end': '^(`|~){3,}\\s*$'
+      '1':
+        'name': 'markup.heading.weave.md'
+      '3':
+        'name': 'markup.bold.weave.md'
+      '5':
+        #For some reason highlighting for options doesn't work
+        #with source.julia, cheat using python
+        'contentName' : 'source.python'
+        'patterns': [
+          {
+            'include': 'source.python'
+          }
+        ]
+    'end': '^[`~]{3,}\\s*$'
     'endCaptures':
       '0':
-        'name': 'support.weave'
-    'name': 'markup.code.julia.weave'
+        'name': 'markup.heading.weave.md'
     'contentName': 'source.julia'
     'patterns': [
       {
