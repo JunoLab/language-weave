@@ -19,7 +19,6 @@ patterns: [
       'endCaptures':
         '1':
             'name': 'markup.heading.weave.noweb'
-      'name': 'markup.code.julia.gfm'
       'contentName': 'source.julia'
       'patterns': [
         {

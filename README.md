@@ -1,9 +1,8 @@
 
-# language-weave
+# Atom support Weave.jl and Pweave
 
 Atom syntax highlighting for [Weave.jl](http://weavejl.mpastell.com) and
-[Pweave](http://mpastell.com/pweave) documents. Currently supports markdown
-input formats.
+[Pweave](http://mpastell.com/pweave) documents.
 
 Provides the following modes:
   - `Weave.jl: markdown` for .jmd, .mdw and .jmdw (markdown with noweb)

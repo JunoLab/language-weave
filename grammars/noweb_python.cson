@@ -1,21 +1,29 @@
 #Noweb for Python
 scopeName: 'source.pweave.noweb'
 patterns: [
-  {
-  'begin': '^<<.*>>=\\s*$'
-  'beginCaptures':
-    '0':
-      'name': 'support.gfm'
-  'end': '^@\\s*$'
-  'endCaptures':
-    '0':
-      'name': 'support.gfm'
-  'name': 'markup.code.python.gfm'
-  'contentName': 'source.python'
-  'patterns': [
     {
-      'include': 'source.python'
+      'begin': '(^<<)(.*?)(>>=)\\s*$'
+      'beginCaptures':
+        '1':
+          'name': 'markup.heading.pweave.noweb'
+        '2':
+          'contentName': 'source.python'
+          'patterns': [
+            {
+              'include': 'source.python'
+            }
+          ]
+        '3':
+          'name' : 'markup.heading.pweave.noweb'
+      'end': '^(@)\\s*$'
+      'endCaptures':
+        '1':
+            'name': 'markup.heading.pweave.noweb'
+      'contentName': 'source.python'
+      'patterns': [
+        {
+          'include': 'source.python'
+        }
+      ]
     }
   ]
-  }
-]

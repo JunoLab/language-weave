@@ -1,4 +1,10 @@
 
+# 0.2.2
+  - Add syntax highlighting for noweb delimiters and chunk options
+
+# 0.2.1
+  - Fix package json
+
 # 0.2.0
   - Support LaTex with noweb
 
