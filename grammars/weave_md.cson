@@ -1,4 +1,4 @@
-'name': 'Weave.jl: markdown'
+'name': 'Weave.jl markdown'
 scopeName: 'source.weave.md'
 'fileTypes': [
   'jmd'

@@ -1,4 +1,4 @@
-'name': 'Pweave: markdown'
+'name': 'Pweave markdown'
 scopeName: 'source.pweave.md'
 'fileTypes': [
   'pmd'
@@ -9,15 +9,14 @@ patterns: [
       'include' : 'source.pweave.noweb'
     }
     {
-    'begin': '^([`~]{3,})(\\{|\\{\\.|)(python)(,|)(.*?)(\\}|)\\s*$'
+    #'begin': '^([`~]{3,})(\\{|\\{\\.|)(julia)(;|)\\s*(.*?)(\\}|)\\s*$'
+    'begin': '^([`~]{3,})(\\{|\\{\\.|)(python)(,|)\\s*(.*?)(\\}|)\\s*$'
     'beginCaptures':
       '1':
         'name': 'markup.heading.weave.md'
       '3':
         'name': 'markup.bold.weave.md'
       '5':
-        #For some reason highlighting for options doesn't work
-        #with source.julia, cheat using python
         'contentName' : 'source.python'
         'patterns': [
           {

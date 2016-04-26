@@ -1,4 +1,7 @@
 
+# 0.2.4
+  - Small fixes to highlighting
+
 # 0.2.3
   - Add syntax highlighting for markdown delimiters and chunk options
 
