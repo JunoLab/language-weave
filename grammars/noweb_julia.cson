@@ -2,14 +2,23 @@
 scopeName: 'source.weave.noweb'
 patterns: [
     {
-      'begin': '^<<.*>>=\\s*$'
+      'begin': '(^<<)(.*?)(>>=)\\s*$'
       'beginCaptures':
-        '0':
-          'name': 'support.gfm'
-      'end': '^@\\s*$'
+        '1':
+          'name': 'markup.heading.weave.noweb'
+        '2':
+          'contentName': 'source.julia'
+          'patterns': [
+            {
+              'include': 'source.julia'
+            }
+          ]
+        '3':
+          'name' : 'markup.heading.weave.noweb'
+      'end': '^(@)\\s*$'
       'endCaptures':
-        '0':
-          'name': 'support.gfm'
+        '1':
+            'name': 'markup.heading.weave.noweb'
       'name': 'markup.code.julia.gfm'
       'contentName': 'source.julia'
       'patterns': [
