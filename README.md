@@ -14,6 +14,10 @@ If you need support for other formats open as issue or make a pull request.
 
 ![](http://mpastell.com/images/language-weave.png)
 
+## Run Julia code using Juno
+
+If you have installed Juno, running code from Weave.jl documents works using "ctrl-enter" and "shift-enter" keybindings.
+
 ## Run code from Atom
 
 You can also run the code from chunks directly in Atom while developing using
