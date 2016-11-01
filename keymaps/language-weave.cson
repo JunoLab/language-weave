@@ -1,0 +1,14 @@
+
+
+'.platform-linux .item-views > atom-text-editor[data-grammar="source weave md"],
+.platform-linux .item-views > atom-text-editor[data-grammar="source weave latex"],
+.platform-win32 .item-views > atom-text-editor[data-grammar="source weave md"],
+.platform-win32 .item-views > atom-text-editor[data-grammar="source weave latex"]':
+    'ctrl-enter': 'julia-client:run-block'
+    'shift-enter': 'julia-client:run-and-move'
+
+
+'.platform-darwin .item-views > atom-text-editor[data-grammar="source weave md"],
+.platform-darwin .item-views > atom-text-editor[data-grammar="source weave latex"]':
+    'cmd-enter': 'julia-client:run-block'
+    'shift-enter': 'julia-client:run-and-move'

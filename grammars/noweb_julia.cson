@@ -1,4 +1,5 @@
 #Noweb for Julia
+
 scopeName: 'source.weave.noweb'
 patterns: [
     {
