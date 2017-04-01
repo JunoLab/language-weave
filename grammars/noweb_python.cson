@@ -7,7 +7,7 @@ patterns: [
         '1':
           'name': 'markup.heading.pweave.noweb'
         '2':
-          'contentName': 'source.python'
+          'contentName': 'source.embedded.python'
           'patterns': [
             {
               'include': 'source.python'
@@ -19,7 +19,7 @@ patterns: [
       'endCaptures':
         '1':
             'name': 'markup.heading.pweave.noweb'
-      'contentName': 'source.python'
+      'contentName': 'source.embedded.python'
       'patterns': [
         {
           'include': 'source.python'

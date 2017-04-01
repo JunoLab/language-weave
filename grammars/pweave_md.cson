@@ -17,7 +17,7 @@ patterns: [
       '3':
         'name': 'markup.bold.weave.md'
       '5':
-        'contentName' : 'source.python'
+        'contentName' : 'source.embedded.python'
         'patterns': [
           {
             'include': 'source.python'
@@ -27,7 +27,7 @@ patterns: [
     'endCaptures':
       '0':
         'name': 'markup.heading.weave.md'
-    'contentName': 'source.python'
+    'contentName': 'source.embedded.python'
     'patterns': [
       {
         'include': 'source.python'

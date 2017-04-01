@@ -8,7 +8,7 @@ patterns: [
         '1':
           'name': 'markup.heading.weave.noweb'
         '2':
-          'contentName': 'source.julia'
+          'contentName': 'source.embedded.julia'
           'patterns': [
             {
               'include': 'source.julia'
@@ -20,7 +20,7 @@ patterns: [
       'endCaptures':
         '1':
             'name': 'markup.heading.weave.noweb'
-      'contentName': 'source.julia'
+      'contentName': 'source.embedded.julia'
       'patterns': [
         {
           'include': 'source.julia'
