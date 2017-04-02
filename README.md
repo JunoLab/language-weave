@@ -16,14 +16,5 @@ If you need support for other formats open as issue or make a pull request.
 
 ## Run Julia code using Juno
 
-If you have installed Juno, running code from Weave.jl documents works using "ctrl-enter" and "shift-enter" keybindings.
-
-## Run code from Atom
-
-You can also run the code from chunks directly in Atom while developing using
-[Hydrogen](https://atom.io/packages/Hydrogen) after you set the correct kernel for
-each is document type under: **Language mappings** e.g:
-
-```javascript
-{ "julia" : "weave.jl markdown", "python": "pweave markdown" }
-```
+If you have installed Juno, running code from Weave.jl documents works
+using "ctrl-enter" and "shift-enter" keybindings.
