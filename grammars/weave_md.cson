@@ -37,4 +37,7 @@ patterns: [
     {
       'include': 'source.gfm'
     }
+    {
+      'include': 'text.md'
+    }
 ]

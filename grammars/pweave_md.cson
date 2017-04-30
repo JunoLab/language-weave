@@ -9,7 +9,6 @@ patterns: [
       'include' : 'source.pweave.noweb'
     }
     {
-    #'begin': '^([`~]{3,})(\\{|\\{\\.|)(julia)(;|)\\s*(.*?)(\\}|)\\s*$'
     'begin': '^([`~]{3,})(\\{|\\{\\.|)(python)(,|)\\s*(.*?)(\\}|)\\s*$'
     'beginCaptures':
       '1':
@@ -36,6 +35,9 @@ patterns: [
     }
     {
       'include': 'source.gfm'
+    }
+    {
+      'include': 'text.md'
     }
 
   ]
