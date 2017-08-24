@@ -6,8 +6,10 @@ Atom syntax highlighting for [Weave.jl](http://weavejl.mpastell.com) and
 Provides the following modes:
   - `Weave.jl: markdown` for .jmd, .mdw and .jmdw (markdown with noweb)
   - `Weave.jl: LaTex` for  texw, .jtexw and .jnw.
+  - `Weave.jl: reStructuredText` for .jrstw
   - `Pweave: markdown` for .pmd and .pmdw (markdown with noweb)
   - `Pweave: LaTex` for .ptexw and .pnw
+  - `Pweave: reStructuredText` for .prstw and .rstw
 
 If you need support for other formats open as issue or make a pull request.
 

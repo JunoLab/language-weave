@@ -1,0 +1,13 @@
+'name': 'Weave.jl reStructuredText'
+scopeName: 'source.weave.restructuredtext'
+'fileTypes': [
+  'jrstw'
+]
+patterns: [
+    {
+      'include' : 'source.weave.noweb'
+    }
+    {
+      'include': 'text.restructuredtext'
+    }
+]

@@ -1,0 +1,14 @@
+'name': 'Pweave reStructuredText'
+scopeName: 'source.pweave.restructuredtext'
+'fileTypes': [
+  'prstw'
+  'rstw'
+]
+patterns: [
+    {
+      'include' : 'source.pweave.noweb'
+    }
+    {
+      'include': 'text.restructuredtext'
+    }
+]
