@@ -1,4 +1,3 @@
-
 # Atom support Weave.jl and Pweave
 
 Atom syntax highlighting for [Weave.jl](http://weavejl.mpastell.com) and
