@@ -26,4 +26,20 @@ patterns: [
         }
       ]
     }
+    {
+      'begin': '(<%)'
+      'beginCaptures':
+        '1':
+          'name': 'markup.heading.pweave.noweb'
+      'end': '(%>)'
+      'endCaptures':
+        '1':
+            'name': 'markup.heading.pweave.noweb'
+      'contentName': 'source.embedded.python'
+      'patterns': [
+        {
+          'include': 'source.python'
+        }
+      ]
+    }
   ]

@@ -27,4 +27,20 @@ patterns: [
         }
       ]
     }
-  ]
+      {
+        'begin': '(<%)'
+        'beginCaptures':
+          '1':
+            'name': 'markup.heading.weave.noweb'
+        'end': '(%>)'
+        'endCaptures':
+          '1':
+              'name': 'markup.heading.weave.noweb'
+        'contentName': 'source.embedded.julia'
+        'patterns': [
+          {
+            'include': 'source.julia'
+          }
+        ]
+      }
+]
