@@ -1,4 +1,4 @@
-'name': 'Pweave LaTex'
+'name': 'Pweave LaTeX'
 scopeName: 'source.pweave.latex'
 'fileTypes': [
   'ptexw'

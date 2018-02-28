@@ -1,4 +1,4 @@
-'name': 'Weave.jl LaTex'
+'name': 'Weave.jl LaTeX'
 scopeName: 'source.weave.latex'
 'fileTypes': [
   'texw'
