@@ -1,6 +1,6 @@
 {
   "name": "language-weave",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "Support for Weave.jl and Pweave",
   "license": "MIT",
   "repository": {
