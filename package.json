@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mpastell/language-weave.git"
+    "url": "https://github.com/mpastell/language-weave.git"
   },
   "engines": {
     "atom": "*"
