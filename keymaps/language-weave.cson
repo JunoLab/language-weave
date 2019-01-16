@@ -34,11 +34,24 @@
 .platform-linux .item-views > atom-text-editor[data-grammar="source weave latex"],
 .platform-win32 .item-views > atom-text-editor[data-grammar="source weave md"],
 .platform-win32 .item-views > atom-text-editor[data-grammar="source weave latex"]':
-    'ctrl-enter': 'julia-client:run-block'
-    'shift-enter': 'julia-client:run-and-move'
-
+  'ctrl-enter': 'julia-client:run-block'
+  'shift-enter': 'julia-client:run-and-move'
+  'ctrl-shift-enter': 'julia-client:run-weave-chunks'
+  'alt-enter': 'julia-client:run-cell'
+  'alt-shift-enter': 'julia-client:run-cell-and-move'
+  'alt-down': 'julia-client:next-cell'
+  'alt-up': 'julia-client:prev-cell'
+  'ctrl-j ctrl-d': 'julia-client:show-documentation'
+  'ctrl-j ctrl-g': 'julia-client:goto-symbol'
 
 '.platform-darwin .item-views > atom-text-editor[data-grammar="source weave md"],
 .platform-darwin .item-views > atom-text-editor[data-grammar="source weave latex"]':
-    'cmd-enter': 'julia-client:run-block'
-    'shift-enter': 'julia-client:run-and-move'
+  'cmd-enter': 'julia-client:run-block'
+  'shift-enter': 'julia-client:run-and-move'
+  'cmd-shift-enter': 'julia-client:run-weave-chunks'
+  'alt-enter': 'julia-client:run-cell'
+  'alt-shift-enter': 'julia-client:run-cell-and-move'
+  'alt-down': 'julia-client:next-cell'
+  'alt-up': 'julia-client:prev-cell'
+  'cmd-j cmd-d': 'julia-client:show-documentation'
+  'cmd-j cmd-g': 'julia-client:goto-symbol'
