@@ -14,6 +14,7 @@
     "url": "https://github.com/mpastell/language-weave/issues"
   },
   "homepage": "https://github.com/mpastell/language-weave",
+  "main": "lib/main.js",
   "extensions": {
     ".json": [
       "package.json"
