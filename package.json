@@ -20,5 +20,24 @@
       "package.json"
     ]
   },
+  "dependencies": {
+    "fs-plus": "2.x",
+    "atom-space-pen-views": "^2.0.3"
+  },
+  "deserializers": {
+    "HTMLPreviewDeserializer": "deserialize"
+  },
+  "consumedServices": {
+    "julia-client": {
+      "versions": {
+        "0.1.0": "consumeJuliaClient"
+      }
+    },
+    "tool-bar": {
+      "versions": {
+        "^0 || ^1": "consumeToolBar"
+      }
+    }
+  },
   "folders": []
 }
