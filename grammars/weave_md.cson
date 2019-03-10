@@ -1,11 +1,11 @@
 'name': 'Weave.jl markdown'
-scopeName: 'source.weave.md'
+'scopeName' : 'source.weave.md'
 'fileTypes': [
   'jmd'
   'jmdw'
   'mdw'
 ]
-patterns: [
+'patterns': [
     {
       'include' : 'source.weave.noweb'
     }
@@ -33,6 +33,20 @@ patterns: [
         'include': 'source.julia'
       }
     ]
+    }
+    {
+      'begin' : '^(!)\\s(.*)'
+      'beginCaptures':
+        '1' :
+            'name' : 'markup.bold.weave.md'
+        '2':
+          'contentName': 'source.embedded.julia'
+          'patterns' : [
+                  {
+                    'include': 'source.julia'
+                  }
+                ]
+      'end' : '$'
     }
     {
       'include': 'source.gfm'
