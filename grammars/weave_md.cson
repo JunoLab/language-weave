@@ -10,13 +10,15 @@
       'include' : 'source.weave.noweb'
     }
     {
-    'begin': '^([`~]{3,})(\\{|\\{\\.|)(julia)(;|)\\s*(.*?)(\\}|)\\s*$'
+    'begin': '^([`~]{3,})(((\\{|\\{\\.|)(julia)(;|))|(@(docs|autodocs|ref|meta|index|content|example|repl|eval|setup|raw)))\\s*(.*?)(\\}|)\\s*$'
     'beginCaptures':
       '1':
         'name': 'markup.heading.weave.md'
-      '3':
-        'name': 'markup.bold.weave.md'
       '5':
+        'name': 'markup.bold.weave.md'
+      '7':
+        'name': 'markup.bold.weave.md'
+      '9':
         'contentName' : 'source.embedded.julia'
         'patterns': [
           {
@@ -47,31 +49,6 @@
                   }
                 ]
       'end' : '$'
-    }
-    {
-    'begin': '^([`~]{3,})(@(docs|autodocs|ref|meta|index|content|example|repl|eval|setup|raw))\\s+(\\d+)?\\s*$'
-    'beginCaptures':
-      '1':
-        'name': 'markup.heading.weave.md'
-      '2':
-        'name': 'markup.bold.weave.md'
-      '4':
-        'contentName' : 'source.embedded.julia'
-        'patterns': [
-          {
-            'include': 'source.julia'
-          }
-        ]
-    'end': '^[`~]{3,}\\s*$'
-    'endCaptures':
-      '0':
-        'name': 'markup.heading.weave.md'
-    'contentName': 'source.embedded.julia'
-    'patterns': [
-      {
-        'include': 'source.julia'
-      }
-    ]
     }
     {
       'include': 'source.gfm'
