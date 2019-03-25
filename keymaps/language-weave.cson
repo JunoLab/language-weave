@@ -5,30 +5,12 @@
 '.platform-linux atom-text-editor[data-grammar="source weave md"]':
   'ctrl-shift-x': 'weave:toggle-task'
 
-'atom-text-editor[data-grammar="source weave md"]':
-  'tab': 'weave:indent-list-item'
-  'shift-tab': 'weave:outdent-list-item'
-  '_': 'weave:emphasis'
-  '*': 'weave:strong-emphasis'
-  '~': 'weave:strike-through'
-  '@': 'weave:link'
-  '!': 'weave:image'
-
 '.platform-darwin atom-text-editor[data-grammar="source pweave md"]':
   'cmd-shift-x': 'weave:toggle-task'
 '.platform-win32 atom-text-editor[data-grammar="source pweave md"]':
   'ctrl-shift-x': 'weave:toggle-task'
 '.platform-linux atom-text-editor[data-grammar="source pweave md"]':
   'ctrl-shift-x': 'weave:toggle-task'
-
-'atom-text-editor[data-grammar="source pweave md"]':
-  'tab': 'weave:indent-list-item'
-  'shift-tab': 'weave:outdent-list-item'
-  '_': 'weave:emphasis'
-  '*': 'weave:strong-emphasis'
-  '~': 'weave:strike-through'
-  '@': 'weave:link'
-  '!': 'weave:image'
 
 '.platform-linux .item-views > atom-text-editor[data-grammar="source weave md"],
 .platform-linux .item-views > atom-text-editor[data-grammar="source weave latex"],
