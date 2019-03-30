@@ -10,15 +10,15 @@
       'include' : 'source.weave.noweb'
     }
     {
-    'begin': '^([`~]{3,})(((\\{|\\{\\.|)(julia)(;|))|(@(docs|autodocs|ref|meta|index|content|example|repl|eval|setup|raw)))\\s*(.*?)(\\}|)\\s*$'
+    'begin': '^([`~]{3,})(?:(?:(?:\\{|\\{\\.|)(julia)(?:;|))|(@(docs|autodocs|ref|meta|index|content|example|repl|eval|setup|raw)))\\s*(?:.*?)(\\}|)\\s*$'
     'beginCaptures':
       '1':
         'name': 'markup.heading.weave.md'
-      '5':
+      '2':
         'name': 'markup.bold.weave.md'
-      '7':
+      '3':
         'name': 'markup.bold.weave.md'
-      '9':
+      '4':
         'contentName' : 'source.embedded.julia'
         'patterns': [
           {
