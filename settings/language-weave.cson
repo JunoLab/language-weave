@@ -1,3 +1,11 @@
 '.source.weave':
   'editor':
     'softWrap': false
+'.source.weave.md:not(.code)':
+  editor:
+    commentStart: '<!-- '
+    commentEnd: ' -->'
+'.source.pweave.md:not(.code)':
+  editor:
+    commentStart: '<!-- '
+    commentEnd: ' -->'
