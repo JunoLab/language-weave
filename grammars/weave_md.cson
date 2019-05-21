@@ -51,9 +51,9 @@
       'end' : '$'
     }
     {
-      'include': 'source.gfm'
+      'include': 'text.md'
     }
     {
-      'include': 'text.md'
+      'include': 'source.gfm'
     }
 ]
