@@ -1,0 +1,9 @@
+'.source.weave.md':
+  'Julia code chunk':
+    'prefix': 'julia'
+    'body': """
+    ```julia
+    $1
+    ```
+    """
+    
