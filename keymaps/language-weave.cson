@@ -18,7 +18,7 @@
 .platform-win32 .item-views > atom-text-editor[data-grammar="source weave latex"]':
   'ctrl-enter': 'julia-client:run-block'
   'shift-enter': 'julia-client:run-and-move'
-  'ctrl-shift-enter': 'julia-client:run-weave-chunks'
+  'ctrl-shift-enter': 'julia-client:run-all'
   'alt-enter': 'julia-client:run-cell'
   'alt-shift-enter': 'julia-client:run-cell-and-move'
   'alt-down': 'julia-client:next-cell'
@@ -30,7 +30,7 @@
 .platform-darwin .item-views > atom-text-editor[data-grammar="source weave latex"]':
   'cmd-enter': 'julia-client:run-block'
   'shift-enter': 'julia-client:run-and-move'
-  'cmd-shift-enter': 'julia-client:run-weave-chunks'
+  'cmd-shift-enter': 'julia-client:run-all'
   'alt-enter': 'julia-client:run-cell'
   'alt-shift-enter': 'julia-client:run-cell-and-move'
   'alt-down': 'julia-client:next-cell'
