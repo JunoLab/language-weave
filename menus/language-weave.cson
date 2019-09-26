@@ -4,7 +4,7 @@
     {type: 'separator'}
 
     {
-      label: 'Julia-Client',
+      label: 'Juno',
       submenu: [
         {label: 'Run Block', command: 'julia-client:run-block'}
         {label: 'Select Block', command: 'julia-client:select-block'}
