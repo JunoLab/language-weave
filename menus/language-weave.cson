@@ -8,8 +8,14 @@
       submenu: [
         {label: 'Run Block', command: 'julia-client:run-block'}
         {label: 'Select Block', command: 'julia-client:select-block'}
+        {type: 'separator'}
         {label: 'Go to Definition', command: 'julia-client:goto-symbol'}
         {label: 'Show Documentation', command: 'julia-client:show-documentation'}
+        {type: 'separator'}
+        {label: 'Debug: Run Block', command: 'julia-debug:run-block'}
+        {label: 'Debug: Step through Block', command: 'julia-debug:step-through-block'}
+        {label: 'Toggle Breakpoint', command: 'julia-debug:toggle-breakpoint'}
+        {label: 'Toggle Conditional Breakpoint', command: 'julia-debug:toggle-conditional-breakpoint'}
       ]
     }
 
