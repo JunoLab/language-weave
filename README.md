@@ -13,7 +13,7 @@ Provides the following modes:
 
 If you need support for other formats open as issue or make a pull request.
 
-![](http://mpastell.com/images/language-weave.png)
+![Juno integration image](https://user-images.githubusercontent.com/40514306/76081328-32f41900-5fec-11ea-958a-375f77f642a2.png)
 
 ## Run code using Hydrogen
 
@@ -25,7 +25,7 @@ For Python you simply need to install Hydrogen and you can use hydrogen keybindi
 
 For Julia you need to add the following to `.atom/keymap.cson` if you want to use Hydrogen instead of Juno:
 
-```
+```coffee
 '.platform-linux .item-views > atom-text-editor[data-grammar="source weave md"],
 .platform-linux .item-views > atom-text-editor[data-grammar="source weave latex"],
 .platform-win32 .item-views > atom-text-editor[data-grammar="source weave md"],
