@@ -1,7 +1,7 @@
 let presets = [
     ["@babel/preset-env", {
         targets: {
-            "electron": 2
+            "electron": 5
         }
     }]
 ];
