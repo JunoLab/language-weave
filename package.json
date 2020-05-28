@@ -14,7 +14,7 @@
     "url": "https://github.com/JunoLab/language-weave/issues"
   },
   "homepage": "https://github.com/JunoLab/language-weave",
-  "main": "lib/main.js",
+  "main": "dist/main.js",
   "extensions": {
     ".json": [
       "package.json"
