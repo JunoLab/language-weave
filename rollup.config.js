@@ -40,7 +40,6 @@ export default [
         ],
         // loaded externally
         external: [
-            "atom-space-pen-views", // loaded because of errors
             "atom",
             // node stuff
             "fs",
