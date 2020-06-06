@@ -42,7 +42,6 @@ export default [
         external: [
             "atom",
             // node stuff
-            "fs",
             "path",
         ],
         plugins: plugins,
