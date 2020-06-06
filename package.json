@@ -14,15 +14,37 @@
     "url": "https://github.com/JunoLab/language-weave/issues"
   },
   "homepage": "https://github.com/JunoLab/language-weave",
-  "main": "lib/main.js",
+  "main": "dist/main.js",
   "extensions": {
     ".json": [
       "package.json"
     ]
   },
+  "scripts": {
+    "clean": "shx rm -rf dist",
+    "debug": "npm run clean && shx cp -r lib dist && env NODE_ENV=development env BABEL_ENV=development babel dist --out-dir dist",
+    "dev": "npm run clean && env NODE_ENV=development env BABEL_ENV=production rollup -c -w",
+    "build": "npm run clean && env NODE_ENV=production env BABEL_ENV=production rollup -c",
+    "ppublish": "bash ./ppublish.sh",
+    "prepare": "npm run build"
+  },
   "dependencies": {
     "fs-plus": "2.x",
-    "atom-space-pen-views": "^2.0.3"
+    "atom-space-pen-views-plus": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/atom": "^1.40.4",
+    "rollup": "^2.11.2",
+    "@rollup/plugin-node-resolve": "^8.0.0",
+    "@rollup/plugin-commonjs": "^12.0.0",
+    "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-coffee-script": "^2.0.0",
+    "coffeescript": "^1.12.7",
+    "shx": "^0.3.2",
+    "@babel/core": "^7.10.1",
+    "@babel/cli": "^7.10.1",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.1",
+    "@babel/preset-env": "^7.10.1"
   },
   "deserializers": {
     "HTMLPreviewDeserializer": "deserialize"
